@@ -1,0 +1,18 @@
+<html>
+<head>
+    <title>Search</title>
+</head>
+<body>
+<h3 align = "center"> Enter the keywords </h3>
+    <form align = "center" action = "/search/" method = "get">
+        <input type = "text" name = "query">
+        <input type = "submit" value = "Search">
+    </form>
+	{% if key_not_found %}
+		<p align = "center"> The input keyword cannot be found. Please try again.</p>
+	{% endif %}
+	{% if key_not_entered %}
+		<p align = "center"> You did not enter any key. Please try again</p>
+	{% endif %}
+</body>
+</html>
